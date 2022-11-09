@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Mandiri 10 (Konversi Mata Uang)</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 50rem;
+            height: auto;
+            padding: 20px;
+            border-radius: 20px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        h1{
+            text-align: center;
+        }
+        .box{
+            padding: 20px;
+        }
+
+        p{
+            text-align: center;
+            font-size: large;
+            font-weight: 500;
+        }
+
+        span{
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 w-50">
+        <h1>Konversi Mata Uang</h1>
+        <div class="box">
+            <form action="#" name="form1" id="pilih_1">
+                <label for="#"> Mata Uang Asal</label>
+            <select class="form-select" aria-label="Default select example" id="pilih1" required>
+                <option selected></option>
+                <option value="rupiah">Indonesia-Rupiah</option>
+                <option value="pound">Inggris-Poundsterling</option>
+                <option value="dollar">Amerika-Dollar</option>
+              </select>
+            </form>
+
+            <form action="#" name="form1" class="mt-2" id="pilih_2">
+                <label for="#">Mata Uang Tujuan</label>
+                <select class="form-select" aria-label="Default select example" id="pilih2">
+                    <option selected></option>
+                    <option value="rupiah">Indonesia-Rupiah</option>
+                    <option value="pound">Inggris-Poundsterling</option>
+                    <option value="dollar">Amerika-Dollar</option>
+                  </select>
+                </form>
+
+              <div class="input-group flex-nowrap mt-3">
+                <input type="text" class="form-control" placeholder="Masukan Nominal" id="input">
+              </div>
+
+              <button type="button" class="btn btn-outline-dark mt-3" onclick="hitung()">Submit</button>
+
+              <p>Hasil : <span id="tampil"></span></p>
+        </div>
+    </div>
+</body>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+</html>
